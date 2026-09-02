@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Ultra-Luxury Royal Brown & Champagne Gold Palette */
+  --bg-page: #0f0a07;
+  --bg-card: #18110b;
+  --bg-card-hover: #221811;
+
+  --gold-primary: #e5c158;
+  --gold-light: #fbe69b;
+  --gold-bright: #fffef5;
+  --gold-dark: #b89128;
+  --amber-glow: #f59e0b;
+
+  --gold-gradient: linear-gradient(135deg, #e5c158 0%, #fbe69b 50%, #b89128 100%);
+  --card-border-gradient: linear-gradient(135deg, rgba(229, 193, 88, 0.4) 0%, rgba(229, 193, 88, 0.1) 100%);
+
+  --text-primary: #fffef5;
+  --text-secondary: #e6d3a8;
+  --text-muted: #9e8e76;
+  --text-dim: #6e604d;
+
+  --border-gold: rgba(229, 193, 88, 0.25);
+  --border-gold-bright: rgba(251, 230, 155, 0.5);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 25px rgba(229, 193, 88, 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.01em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+/* Custom Gold Smooth Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0a07;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #e5c158, #b89128);
+  border-radius: 5px;
+  border: 2px solid #0f0a07;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #fbe69b;
+}
+
+/* Refined Luxury Panels */
+.glass-panel-light {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-card);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-panel-dark {
+  background: #0a0705;
+  border: 1.5px solid var(--border-gold-bright);
+  border-radius: var(--radius-lg);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-card);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Interactive Card */
+.racing-card-interactive {
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.racing-card-interactive:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow), var(--shadow-card);
+  border-color: var(--gold-light);
+  background: var(--bg-card-hover);
+}
+
+/* Top Accent Line */
+.racing-stripe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gold-gradient);
+}
+
+/* High Speed Telemetry Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.btn-ocean {
+  background: var(--gold-gradient);
+  color: #0f0a07;
+  font-weight: 900;
+  box-shadow: 0 4px 18px rgba(229, 193, 88, 0.35);
+}
+.btn-ocean:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(251, 230, 155, 0.55);
+}
+
+.btn-dark {
+  background: #221811;
+  color: var(--gold-light);
+  border: 1.5px solid var(--border-gold);
+}
+.btn-dark:hover {
+  background: #302218;
+  border-color: var(--gold-light);
+  color: #fffef5;
+}
+
+.btn-outline-ocean {
+  background: transparent;
+  color: var(--gold-light);
+  border: 2px solid var(--gold-primary);
+}
+.btn-outline-ocean:hover {
+  background: var(--gold-primary);
+  color: #0f0a07;
+}
+
+.btn-sm {
+  padding: 8px 14px;
+  font-size: 0.78rem;
+  border-radius: var(--radius-sm);
+}
+
+/* Badges */
+.badge-telemetry {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 0.74rem;
+  letter-spacing: 0.06em;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.badge-ocean {
+  background: rgba(229, 193, 88, 0.12);
+  color: var(--gold-light);
+  border: 1px solid var(--border-gold);
+}
+
+.badge-cyan {
+  background: rgba(251, 230, 155, 0.15);
+  color: var(--gold-light);
+  border: 1px solid var(--border-gold-bright);
+}
+
+.badge-glow {
+  background: var(--gold-gradient);
+  color: #0f0a07;
+  font-weight: 900;
+}
+
+/* Nav Tabs */
+.racing-nav-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 0.88rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: #18110b;
+  border: 1.5px solid var(--border-gold);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.racing-nav-tab:hover {
+  color: var(--gold-light);
+  border-color: var(--gold-light);
+}
+
+.racing-nav-tab.active {
+  color: #0f0a07;
+  background: var(--gold-gradient);
+  border-color: transparent;
+  box-shadow: 0 4px 18px rgba(229, 193, 88, 0.4);
+}
+
+/* Form Controls */
+.form-control {
+  background: #221811;
+  border: 1.5px solid var(--border-gold);
+  color: var(--text-primary);
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  font-weight: 600;
+  outline: none;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.form-control:focus {
+  border-color: var(--gold-light);
+  box-shadow: 0 0 0 3px rgba(229, 193, 88, 0.2);
+}
+
+select.form-control option {
+  background: #18110b;
+  color: var(--text-primary);
+}
+
+/* Main Container Layout */
+.app-container {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
