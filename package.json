@@ -1,30 +1,34 @@
 {
-  "name": "ai-data-insights",
+  "name": "apex-ai-analytics",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "oxlint",
+    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@types/papaparse": "^5.5.2",
+    "@types/papaparse": "^5.3.16",
     "chart.js": "^4.5.1",
-    "lucide-react": "^1.39.0",
-    "papaparse": "^5.7.0",
-    "react": "^19.2.8",
-    "react-chartjs-2": "^5.3.1",
-    "react-dom": "^19.2.8"
+    "lucide-react": "^1.16.0",
+    "papaparse": "^5.5.3",
+    "react": "^19.1.0",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@types/node": "^24.13.3",
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.4",
-    "@vitejs/plugin-react": "^6.1.0",
-    "oxlint": "^1.79.0",
-    "typescript": "~6.0.2",
-    "vite": "^8.2.2"
+    "@eslint/js": "^9.21.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^6.2.0"
   }
 }

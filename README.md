@@ -1,32 +1,34 @@
-# React + TypeScript + Vite
+# 🏆 Apex AI Analytics
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> Next-Generation Predictive Telemetry, AI Executive Briefings & Autonomous Data Analytics Platform.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **📊 Dynamic Visual Telemetry & Predictive AI Forecasts**: Multi-chart visual studio (Bar, Line, Pie, Doughnut) with linear regression trend forecasting and confidence bands.
+- **⚡ Real-Time Live Streaming Telemetry**: Simulated real-time incoming data feed updating metrics, charts, and quality health scores live.
+- **🔊 Web Speech Voice Briefing**: Built-in AI text-to-speech audio narration for executive summaries and key findings.
+- **📺 Presentation Slide Deck Exporter**: Instant single-click export of full-screen executive HTML presentation slides.
+- **🔀 Multi-CSV Join & Merge Studio**: Cross-table merging and join capabilities across multi-file datasets.
+- **🤖 Autonomous AI Executive Summary & Ask AI Chat Assistant**: Automatic anomaly detection, key concentration drivers, and conversational natural language data QA.
+- **👑 Royal Espresso & Imperial Gold Design**: Ultra-sleek, high-contrast dark theme with gold smooth scrolling and custom scrollbar.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: React 19 + TypeScript + Vite
+- **Styling**: Custom CSS Tokens (Royal Espresso Brown & Imperial Gold)
+- **Visuals**: Chart.js & React-ChartJS-2
+- **Icons**: Lucide React
+- **Parsing**: PapaParse
 
-## Expanding the Oxlint configuration
+## 🚦 Getting Started
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+```bash
+# Install dependencies
+npm install
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+# Run local development server
+npm run dev
+
+# Build production bundle
+npm run build
 ```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.

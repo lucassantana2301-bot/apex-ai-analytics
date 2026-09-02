@@ -65,14 +65,14 @@ export const Header: React.FC<HeaderProps> = ({
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
               <h1 style={{ fontSize: '1.6rem', color: 'var(--gold-light)', letterSpacing: '-0.02em' }}>
-                AI Data Insights
+                Apex AI Analytics
               </h1>
               <span className="badge-telemetry badge-glow">
-                <Zap size={12} /> IMPERIAL v6.0
+                <Zap size={12} /> APEX v1.0
               </span>
             </div>
             <p style={{ fontSize: '0.84rem', color: 'var(--text-gold-muted)', fontWeight: 500 }}>
-              Royal Espresso & Gold Telemetry • Predictive Forecasts & Executive Intelligence
+              Next-Gen Predictive Telemetry & AI Executive Intelligence
             </p>
           </div>
         </div>
@@ -102,9 +102,8 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
         </div>
 
-        {/* Action Controls & Feature Buttons */}
+        {/* Action Controls */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
-          {/* Live Telemetry Streaming Simulator */}
           <button
             className={`btn ${isLiveStreaming ? 'btn-ocean animate-race-pulse' : 'btn-outline-ocean'}`}
             onClick={onToggleLiveStream}
@@ -113,7 +112,6 @@ export const Header: React.FC<HeaderProps> = ({
             <Radio size={16} /> {isLiveStreaming ? '🔴 LIVE STREAMING' : 'LIVE STREAM'}
           </button>
 
-          {/* Text-to-Speech Audio Briefing */}
           <button
             className={`btn ${isPlayingAudio ? 'btn-ocean' : 'btn-dark'}`}
             onClick={handleToggleAudio}

@@ -68,7 +68,7 @@ export const IntroHero: React.FC<IntroHeroProps> = ({ onEngage, datasetName, row
               ))}
             </div>
             <span className="badge-telemetry badge-glow" style={{ fontSize: '0.72rem' }}>
-              <Zap size={12} /> IMPERIAL GOLD {telemetryState}
+              <Zap size={12} /> APEX AI ENGINE {telemetryState}
             </span>
           </div>
 
@@ -85,11 +85,11 @@ export const IntroHero: React.FC<IntroHeroProps> = ({ onEngage, datasetName, row
               WebkitTextFillColor: 'transparent',
             }}
           >
-            NEXT-GEN AI DATA ENGINE
+            APEX AI ANALYTICS ENGINE
           </h1>
 
           <p style={{ fontSize: '1rem', color: '#e2c992', lineHeight: '1.6', marginBottom: '24px', fontWeight: 500 }}>
-            Prestige analytics for <strong>{datasetName}</strong>. Instant executive summaries, real-time telemetry QA & natural language AI querying.
+            Next-generation predictive analytics for <strong>{datasetName}</strong>. Instant executive summaries, real-time telemetry QA & natural language AI querying.
           </p>
 
           {/* RPM Telemetry Gauge Progress Bar */}
@@ -118,30 +118,25 @@ export const IntroHero: React.FC<IntroHeroProps> = ({ onEngage, datasetName, row
               onClick={onEngage}
               style={{ padding: '16px 32px', fontSize: '1rem', borderRadius: 'var(--radius-md)' }}
             >
-              <Play size={20} fill="#120b08" /> LAUNCH TELEMETRY ENGINE <ChevronRight size={18} />
+              <Play size={20} fill="#120b08" /> LAUNCH APEX TELEMETRY <ChevronRight size={18} />
             </button>
           </div>
         </div>
 
-        {/* Right Side: Orbital Space Station Quantum Atom (Imperial Gold) */}
+        {/* Right Side: Orbital Space Station Quantum Atom */}
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative', height: 300 }}>
           <div className="quantum-atom-wrapper">
-            {/* Outer Ring 1 */}
             <div className="orbital-ring ring-1" />
-            {/* Outer Ring 2 */}
             <div className="orbital-ring ring-2" />
-            {/* Outer Ring 3 */}
             <div className="orbital-ring ring-3" />
 
-            {/* Core Orb */}
             <div className="atom-core">
               <Activity size={32} color="#120b08" />
             </div>
 
-            {/* Orbiting Space Nodes */}
             <div className="space-node node-1">📁 {rowCount} ROWS</div>
             <div className="space-node node-2">⚡ 100% ACCURACY</div>
-            <div className="space-node node-3">🤖 AI ACTIVE</div>
+            <div className="space-node node-3">🤖 APEX AI ACTIVE</div>
           </div>
         </div>
       </div>
